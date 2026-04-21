@@ -181,18 +181,6 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
             DATABASE
           </Link>
 
-          {/* TEST DB — Koneksi Neon */}
-          <Link href="/dashboard/test-db" style={{
-            ...navLinkStyle(['/dashboard/test-db']),
-            border: pathname.startsWith('/dashboard/test-db') ? '1px solid rgba(34, 197, 94, 0.4)' : '1px solid rgba(34, 197, 94, 0.2)',
-            color: pathname.startsWith('/dashboard/test-db') ? 'white' : '#22C55E',
-            background: pathname.startsWith('/dashboard/test-db') ? 'linear-gradient(90deg, #16A34A, #15803D)' : 'rgba(34, 197, 94, 0.05)',
-          }}>
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <polyline points="20 6 9 17 4 12"></polyline>
-            </svg>
-            TEST DB
-          </Link>
         </div>
 
         {/* Right: Status, Date, Exit */}
